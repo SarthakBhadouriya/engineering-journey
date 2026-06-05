@@ -1,2 +1,2 @@
 # engineering-journey
-Documenting my software engineering journey. Everyday.
+Documenting my software engineering journey.
