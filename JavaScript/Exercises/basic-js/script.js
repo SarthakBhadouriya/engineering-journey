@@ -1,0 +1,26 @@
+    // 1. Declare a variable named `greeting` and assign it the value "Hello, World!".
+        let greeting = "Hello, World!";
+        console.log(greeting);
+
+        // 2. Create a function named `add` that takes two parameters and returns their sum.
+        function add(a, b) {
+            return a + b;
+        }
+        console.log(add(5, 3)); // Output: 8
+
+        // 3. Create an array named `fruits` that contains the following strings: "apple", "banana", "cherry".
+        let fruits = ["apple", "banana", "cherry"];
+        console.log(fruits);
+
+        // 4. Use a loop to iterate through the `fruits` array and print each fruit to the console.
+        for (let i = 0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+        }
+
+        // 5. Create an object named `person` with properties `name`, `age`, and `city`.
+        let person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+        console.log(person)
