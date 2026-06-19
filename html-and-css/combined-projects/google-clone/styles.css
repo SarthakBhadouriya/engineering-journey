@@ -42,3 +42,10 @@ button:first-of-type {
 button::hover {
     cursor: pointer;   
 }
+
+#privacy-notice {
+    text-align: center;
+    font-size: 12px;
+    color: #70757a;
+    margin-top: 20px;
+}
