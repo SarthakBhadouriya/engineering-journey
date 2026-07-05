@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Developer Learning Survey</h1>
+    <p id="description">
+      Share your coding journey and help us create better learning resources.
+    </p>
+
+    <form id="survey-form">
+      <div class="parameter name">
+        <label class="label" id="name-label" for="name">Name</label>
+        <input
+          name="name"
+          id="name"
+          type="text"
+          placeholder="Enter your name"
+          required>
+      </div>
+
+      <div class="parameter email">
+        <label class="label" id="email-label" for="email">Email</label>
+        <input
+          name="email"
+          id="email"
+          type="email"
+          placeholder="Enter your email"
+          required>
+      </div>
+
+      <div class="parameter age">
+        <label class="label" id="age-label" for="age">Age (optional)</label>
+        <input
+          name="age"
+          id="age"
+          type="number"
+          placeholder="Age"
+          min="10"
+          max="100">
+      </div>
+
+      <div class="parameter select">
+        <p>How would you describe your coding experience?</p>
+        <select id="dropdown" name="role" required>
+          <option disabled selected>Select your experience level</option>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
+          <option value="Professional">Professional</option>
+          <option value="Just Curious">Just Curious</option>
+        </select>
+      </div>
+
+      <div class="parameter radio">
+        <p>How often do you practice coding?</p>
+        <label><input type="radio" name="user-recommend" value="daily" checked>Daily</label>
+        <label><input type="radio" name="user-recommend" value="weekly">A few times a week</label>
+        <label><input type="radio" name="user-recommend" value="occasionally">Occasionally</label>
+      </div>
+
+      <div class="parameter select">
+        <p>Which area of programming interests you the most?</p>
+        <select id="most-like" name="mostLike" required>
+          <option disabled selected value="">Select an option</option>
+          <option value="frontend">Front-end Development</option>
+          <option value="backend">Back-end Development</option>
+          <option value="mobile">Mobile Apps</option>
+          <option value="ai">Artificial Intelligence</option>
+        </select>
+      </div>
+
+      <div class="parameter checkbox">
+        <p>
+          Which skills are you currently learning?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+
+        <label><input name="prefer" value="html-css" type="checkbox" class="input-checkbox">HTML & CSS</label>
+        <label><input name="prefer" value="javascript" type="checkbox" class="input-checkbox">JavaScript</label>
+        <label><input name="prefer" value="react" type="checkbox" class="input-checkbox">React</label>
+        <label><input name="prefer" value="nodejs" type="checkbox" class="input-checkbox">Node.js</label>
+        <label><input name="prefer" value="python" type="checkbox" class="input-checkbox">Python</label>
+        <label><input name="prefer" value="databases" type="checkbox" class="input-checkbox">Databases</label>
+        <label><input name="prefer" value="git" type="checkbox" class="input-checkbox">Git & GitHub</label>
+        <label><input name="prefer" value="apis" type="checkbox" class="input-checkbox">Working with APIs</label>
+        <label><input name="prefer" value="testing" type="checkbox" class="input-checkbox">Testing</label>
+        <label><input name="prefer" value="deployment" type="checkbox" class="input-checkbox">Deployment</label>
+        <label><input name="prefer" value="uiux" type="checkbox" class="input-checkbox">UI/UX Design</label>
+      </div>
+
+      <div class="parameter textarea">
+        <p>What motivates you to keep learning to code?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Share your thoughts..."></textarea>
+      </div>
+
+      <div class="parameter submit">
+        <button id="submit" type="submit">Submit Survey</button>
+      </div>
+    </form>
+  </body>
+</html>
